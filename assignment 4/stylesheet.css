@@ -1,0 +1,121 @@
+
+/*General body styling*/
+body{
+    font-family: "poppins", sans-serif;
+    background-color: #b0dce2;
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100vh;
+    padding-top: 30px;
+}
+
+header{
+    margin: 7% 10% 0 10%;
+}
+/*logo*/
+.logo{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.logo img{
+    width: 40%;
+    padding: 30px;
+}
+
+footer{
+    flex-basis: 100%;
+}
+
+/*Right Section:*/
+.signup_container{
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+    max-width: 400px;
+    width: 100%;
+    flex: 1;
+}
+
+/*form fields layout*/
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+form .form_grid{}
+
+/*Input fields and select*/
+input, select{
+    width: 50%;
+    padding: 12px;
+    border: 1.5px solid #d1d1d1;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #ffffff;
+    transition: border-color 0.3s ease-in-out;
+}
+
+p{
+    padding
+}
+/*Hover effect*/
+input:hover, select:hover{
+    border-color: #6c757d;
+}
+
+/*focus effect*/
+input:focus select:focus{
+    border-color: #2ec4b6;
+    box-shadow: 0 0 5px #26a69a;
+    outline: 0;
+}
+
+/*Register button*/
+.Register-btn{
+    width: 50%;
+    padding: 12px;
+    background-color: #79f8eb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/*Terms and Condition*/
+.terms{
+    text-align: center;
+    font-size: 12px;
+    color: #151616;
+    margin-top: 10px;
+   text-align: right;
+}
+
+.terms a{
+    color:#26a69a ;
+    text-decoration: none;
+}
+
+.terms hover{
+    text-decoration: underline;
+}
+
+/*Responsive for mobile*/
+@media  and (max-width:768px) {
+    .signup-wrapper{
+        flex-direction: column;
+        padding: 10px;
+        margin: top 25px;
+        }
+    
+}
+
+@media (max-width: 480px)
