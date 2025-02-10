@@ -1,0 +1,98 @@
+
+
+/*==============Styles===========*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    line-height: 1.5;
+    flex-direction: column;
+    font-family: lato, sans-serif;
+    font-size: 1.2rem;
+    
+    
+}
+.heading h1 {
+    font-family: 40px;
+    font -weight:700;
+}
+.heading{
+    font-size: 40px;
+    font-weight: 700;
+}
+.heading p{
+    min-width: 22%;
+    font-size: 18px;
+}
+
+span{
+    color: #009966;
+    font-weight: 700;
+
+}
+
+
+.empty-div1{
+    background-color: #332f2f;
+    height: 40px;
+    width: auto;
+   
+}
+#mysection h2{
+    background-color: #ffbf00;
+    height: 40px;
+    width: 45%;
+    padding: 10px 25px;
+    margin-top: 5px;
+    font-size: 16px;
+
+}
+
+#mysection p{
+    min-width: 37%;
+    font-size: 18px;
+    padding: 12px 45px;
+
+}
+
+.empty-div2{
+    background-color: #332f2f;
+    height: 40px;
+    width: auto;
+}
+
+
+/*=============RWD=========*/
+/*Larger phones and tablets(380px-768px)
+*/
+@media screen and (min-width) {
+    .header-content{
+        width: 60%;
+    }
+}
+
+/*Laptop and larger tablets (768px-1279px)*/
+@media screen and (min-width):769px {
+    .header-content{
+        width: 435px;
+        /*Calculate the margin based on the card width of 950px*/
+        margin:55px 0 0 max(5px, calc(100vw-950px) /2)
+    }
+    
+
+}
+
+/*Extra large screens (1280px and above)*/
+@media screen and (min-width: 1280px) {
+    .header-content{
+        margin-left: calc ((100vw-950px)/2);/*This centers the card*/
+
+    }
+    
+}
+
